@@ -132,11 +132,17 @@ impl Invaders {
     fn is_in_bounds(x: usize, y: usize) -> bool {
         let x_in_bounds = (x > 1) && (x < NUM_COLS - 2);
         let y_in_bounds = (y > 0) && (y < 9);
-        return x_in_bounds && y_in_bounds;
+        x_in_bounds && y_in_bounds
     }
 
     fn is_even(x: usize, y: usize) -> bool {
         (x % 2 == 0) && (y % 2 == 0)
+    }
+}
+
+impl Default for Invaders {
+    fn default() -> Self {
+        Self::new()
     }
 }
 
