@@ -6,10 +6,10 @@ use std::time::{self, Duration, Instant};
 use crossterm::event::{Event, KeyCode};
 use crossterm::ExecutableCommand;
 use crossterm::{cursor, event, terminal};
-use invaders::invaders::Invaders;
 use rusty_audio::Audio;
 
 use invaders::frame::Drawable;
+use invaders::invaders::Invaders;
 use invaders::player::Player;
 use invaders::{frame, render};
 
